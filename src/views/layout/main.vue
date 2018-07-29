@@ -2,11 +2,13 @@
     <div>
         <head-nav></head-nav>
         <router-view/>
+        <bottom></bottom>
     </div>
 </template>
 
 <script>
     import headNav from './header'
+    import bottom from './bottom'
 
     export default{
         data(){
@@ -15,7 +17,7 @@
             }
         },
         components: {
-            headNav
+            headNav,bottom
         }
     }
 </script>

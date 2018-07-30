@@ -131,22 +131,23 @@
         img{
             width: 460px;
         }
-    }
-    .text{
-        width: 740px;
-        text-align: left;
-        color:#9D9D9D;
-        padding: 20px 0 0 60px;
-        box-sizing: border-box;
-        >div{
-            margin: 0 0 20px 0;
+        .text{
+            width: 740px;
+            text-align: left;
+            color:#9D9D9D;
+            padding: 20px 0 0 60px;
+            box-sizing: border-box;
+            >div{
+                margin: 0 0 20px 0;
+            }
+            p{
+                margin:0;
+                padding:0;
+            }
         }
-        p{
-            margin:0;
-            padding:0;
-        }
-    }
 
+    }
+    
     .address_img{
         margin: 40px 0 0 0;
     }

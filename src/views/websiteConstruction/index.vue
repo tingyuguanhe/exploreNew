@@ -260,6 +260,9 @@
                     margin:0 10px 10px 0;
                     padding: 30px;
                     box-sizing: border-box;
+                    &:nth-child(5n){
+                        margin-right:0; 
+                    }
                 }   
             }
         }

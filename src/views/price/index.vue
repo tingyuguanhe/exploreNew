@@ -245,7 +245,7 @@
                     font-size: 12px;
                 }
                 .text{
-                    width: 75%;
+                    width: 80%;
                     margin-left: 13px;
                 }
                 &:nth-child(2n+1){

@@ -88,9 +88,7 @@
                     <button>提交您的信息</button>
                 </div>
             </div>
-            
         </div>
-
     </div>
 </template>
 
@@ -257,14 +255,6 @@
             
         }
     }
-
-
-    .head{
-        font-size: 28px;
-    }
-    .sub_head{
-        color:#9D9D9D;
-    }
     .intro{
         color:#ABABAB;
         font-size: 12px;
@@ -375,7 +365,6 @@
                     color:#666666;
                 }
             }
-
         }
     }
 

@@ -30,7 +30,8 @@ const router = new Router({
           name: 'Home',
           component: Home,
           meta:{
-            name:'首页'
+            name:'首页',
+            id: 0
           }
         },
         { 
@@ -38,7 +39,8 @@ const router = new Router({
           name: 'WebsiteConstruction',
           component: WebsiteConstruction,
           meta:{
-            name:'网站建设'
+            name:'网站建设',
+            id: 1
           }
         },
         { 
@@ -46,7 +48,8 @@ const router = new Router({
           name: 'Marketing',
           component: Marketing,
           meta:{
-            name:'营销推广'
+            name:'营销推广',
+            id: 2
           }
         },
         { 
@@ -54,7 +57,8 @@ const router = new Router({
           name: 'Cases',
           component: Cases,
           meta:{
-            name:'客户案例'
+            name:'客户案例',
+            id: 3
           }
         },
         { 
@@ -62,7 +66,8 @@ const router = new Router({
           name: 'Price',
           component: Price,
           meta:{
-            name:'价格'
+            name:'价格',
+            id: 4
           }
         },
         { 
@@ -70,7 +75,8 @@ const router = new Router({
           name: 'SmallProgram',
           component: SmallProgram,
           meta:{
-            name:'小程序'
+            name:'小程序',
+            id: 5
           }
         },
         { 
@@ -78,7 +84,8 @@ const router = new Router({
           name: 'AboutUs',
           component: AboutUs,
           meta:{
-            name:'关于我们'
+            name:'关于我们',
+            id: 6
           }
         },
         { 
@@ -86,7 +93,8 @@ const router = new Router({
           name: 'JoinUs',
           component: JoinUs,
           meta:{
-            name:'加入我们'
+            name:'加入我们',
+            id: 7
           }
         }
       ]

@@ -1,13 +1,13 @@
 <template>
-    <div class="head" :class="{'home_head':homeLogo}">
+    <div class="head" :class="{'home_head':homeLogoShow}">
         <div class="nr_wrap">
             <div class="f_l">
-                <img class="logo" v-if="homeLogo" src="../../assets/logo.png" alt="">
+                <img class="logo" v-if="homeLogoShow" src="../../assets/logo.png" alt="">
                 <img class="logo" v-else src="../../assets/home/logo.png" alt="">
             </div> 
             <ul>
-                <li v-for="(item,index) in menus" :key="index" @click="routeLink(item)">  
-                    <span v-if="item.meta" :class="{'active': activeMenu == index}">{{item.meta.name}}</span>
+                <li v-for="(item,index) in menus" :key="index" @click="routeLink(item,index)">  
+                    <span v-if="item.meta" :class="{'active': activeNav == index}">{{item.meta.name}}</span>
                 </li>
             </ul>
         </div>
@@ -18,59 +18,28 @@
     export default{
         data(){
             return{
-                homeLogo: true,
-                menus:[
-                    {
-                        name:'首页',
-                        value:'home'
-                    },
-                    {
-                        name:'网站建设',
-                        vlaue:'website'
-                    },
-                    {
-                        name:'营销推广',
-                        vlaue:'marketing'
-                    },
-                    {
-                        name:'客户案例',
-                        vlaue:'cases'
-                    },
-                    {
-                        name:'价格',
-                        vlaue:'price'
-                    },
-                    {
-                        name:'小程序',
-                        vlaue:'program'
-                    },
-                    {
-                        name:'关于我们',
-                        vlaue:'aboutus'
-                    },
-                    {
-                        name:'加入我们',
-                        vlaue:'joinus'
-                    }
-                ],
-                activeMenu: 0
+                menus:[]
             }
         },
         mounted () {
             this.menus = this.$router.options.routes[1].children;
         },
-        watch: {
-            '$route': function(newVal, oldVal){
-                if(newVal.path == '/home'){
-                    this.homeLogo = true
-                } else{
-                    this.homeLogo = false
-                } 
+        computed:{
+            activeNav: {
+                get: function() {
+                    return this.activeMenu;
+                },
+                set: function(newValue) {
+                    //console.log(newValue);
+                }
             }
         },
+        props: ['homeLogoShow','activeMenu'],
         methods: {
-            routeLink(item){
-                this.$router.push({path: item.path})
+            routeLink(item,index){
+                this.activeNav = index;
+                this.$emit('activeNav',index);
+                this.$router.push({path: item.path});
             }
         }
     }

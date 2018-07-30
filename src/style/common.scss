@@ -29,3 +29,10 @@ ul{
     display: block;
     clear: both;
 }
+
+input:focus,button:focus{
+    outline-style: none;
+}
+button{
+    cursor: pointer;
+}

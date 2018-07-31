@@ -189,8 +189,10 @@
         position: relative;
         img{
             position: absolute;
-            left: 0;
-            bottom:0;
+            left: 50%;
+            bottom: 0;
+            width: 1370px;
+            margin: 0 0 0 -685px;
         }
         .head{
             font-size: 28px;

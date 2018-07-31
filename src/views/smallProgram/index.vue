@@ -109,7 +109,7 @@
             .banner_img{
                 position: absolute;
                 left: -70px;
-                bottom: -2px;
+                bottom: 0;
             }
             .banner_ad{
                 font-size: 47px;

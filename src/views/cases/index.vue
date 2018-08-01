@@ -62,12 +62,13 @@
             button{
                 border: 1px solid #189B75;
                 border-radius: 5px;
-                width: 180px;
-                height: 40px;
-                line-height: 37px;
+                width: 160px;
+                height: 44px;
+                line-height: 40px;
                 color: #189B75;
-                font-size: 15px;
+                font-size: 16px;
                 margin-top: 30px;
+                background: #fff;
             }
         }
     }

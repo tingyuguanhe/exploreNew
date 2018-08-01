@@ -146,6 +146,8 @@
     .intro{
         font-size: 12px;
         color:#ABABAB;
+        margin: 10px 0 0 0;
+        line-height: 22px;
     }
 
     .brand{
@@ -182,7 +184,7 @@
                 .title{
                     font-size: 25px;
                     text-align: left;
-                    margin: 30px 0 10px 0;
+                    margin: 30px 0 2px 0;
                     padding: 0 48px;
                     box-sizing: border-box;
                 }
@@ -192,6 +194,7 @@
                     padding: 0 48px;
                     box-sizing: border-box;
                     margin-bottom: 50px;
+                    line-height: 22px;
                 }
             }
            ul.right{

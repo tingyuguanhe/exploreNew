@@ -45,7 +45,8 @@
                             <img :src="item.imgUrl" alt="">
                         </div>
                         <div class="name">{{item.name}}</div>
-                        <div class="intro">{{item.intro}}</div>
+                        <div class="intro">{{item.intro1}}</div>
+                        <div class="intro">{{item.intro2}}</div>
                     </li>
                 </ul>
             </div>
@@ -149,52 +150,62 @@
                 listData:[
                     {
                         name:'友好砍价',
-                        intro:'免费吸粉引流免费提高转化',
+                        intro1:'免费吸粉引流',
+                        intro2:'免费提高转化',
                         imgUrl: require('../../assets/home/12.png')
                     },
                     {
                         name:'分销应用',
-                        intro:'多种角色与利益分配引爆品牌销量',
+                        intro1:'多种角色与利益分配',
+                        intro2:'引爆品牌销量',
                         imgUrl: require('../../assets/home/14.png')
                     },
                     {
                         name:'全渠道 ERP',
-                        intro:'同步管理友好速搭、淘宝、天猫、京东等50类销售渠道',
+                        intro1:'同步管理友好速搭、淘宝、',
+                        intro2:'天猫、京东等50类销售渠道',
                         imgUrl: require('../../assets/home/15.png')
                     },
                     {
                         name:'客服工具',
-                        intro:'网易自主研发智能客服机器人',
+                        intro1:'网易自主研发智能客服机器人',
+                        intro2:'',
                         imgUrl: require('../../assets/home/16.png')
                     },
                     {
                         name:'大数据分析',
-                        intro:'广告、活动、用户行为等经营数据实时分析',
+                        intro1:'广告、活动、用户',
+                        intro2:'行为等经营数据实时分析',
                         imgUrl: require('../../assets/home/13.png')
                     },
                     {
                         name:'订单打印',
-                        intro:'多店铺、多平台订单统一管理、打印',
+                        intro1:'多店铺、多平台',
+                        intro2:'订单统一管理、打印',
                         imgUrl: require('../../assets/home/18.png')
                     },
                     {
                         name:'办公协同',
-                        intro:'高效易用的一站式协作与管理平台',
+                        intro1:'高效易用的一站式',
+                        intro2:'协作与管理平台',
                         imgUrl: require('../../assets/home/17.png')
                     },
                     {
                         name:'二维码生成',
-                        intro:'不同场景二维码轻松生成',
+                        intro1:'不同场景二维码轻松生成',
+                        intro2:'',
                         imgUrl: require('../../assets/home/20.png')
                     },
                     {
                         name:'评价插件',
-                        intro:'全方位管理商品评价及回复',
+                        intro1:'全方位管理商品评价及回复',
+                        intro2:'',
                         imgUrl: require('../../assets/home/19.png')
                     },
                     {
                         name:'商品搭售',
-                        intro:'自定义商品推荐和搭配，多规则多组合灵活销售',
+                        intro1:'自定义商品推荐和搭配，多',
+                        intro2:'规则多组合灵活销售',
                         imgUrl: require('../../assets/home/21.png')
                     }
                 ],
@@ -252,8 +263,9 @@
     .intro{
         color:#ABABAB;
         font-size: 12px;
+        margin: 10px 0 0 0;
+        line-height: 22px;
     }
-
     .superiority{
         width: 100%;
         height: 730px;
@@ -275,7 +287,7 @@
                 .title{
                     font-size: 25px;
                     text-align: left;
-                    margin: 30px 0 10px 0;
+                    margin: 30px 0 2px 0;
                     padding: 0 48px;
                     box-sizing: border-box;
                 }
@@ -285,6 +297,7 @@
                     padding: 0 48px;
                     box-sizing: border-box;
                     margin-bottom: 50px;
+                    line-height: 22px;
                 }
             }
            ul.right{
@@ -333,7 +346,10 @@
                 &:nth-child(5),&:nth-child(10){
                     border-right: none;
                 }
-               
+                .intro{
+                    margin: 0;
+                    line-height: 18px;
+                }
             }
         }
     }

@@ -29,9 +29,21 @@
                 <div class="head">友好速搭小程序的案例</div>
                 <div class="sub_head">来自深圳的互联网营销解决方案，让商业更简单</div>
                 <ul class="clearfix">
-                    <li><img src="../../assets/program/img1.png" alt=""></li>
-                    <li><img src="../../assets/program/img2.png" alt=""></li>
-                    <li><img src="../../assets/program/img3.png" alt=""></li>
+                    <li>
+                        <img src="../../assets/program/img1.png" alt="">
+                        <div class="name">Forsample Shop</div>
+                        <div class="intro">复古与科技混搭的生活美学</div>
+                    </li>
+                    <li>
+                        <img src="../../assets/program/img2.png" alt="">
+                        <div class="name">rosetome</div>
+                        <div class="intro">全进口高端玫瑰品牌</div>
+                    </li>
+                    <li>
+                        <img src="../../assets/program/img3.png" alt="">
+                        <div class="name">火花岛旅行</div>
+                        <div class="intro">国内知名小团体旅行品牌</div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -136,29 +148,41 @@
                 }
 
             }
-            .name{
-                font-size: 18px;
-                margin: 20px 0 10px 0;
-            }
-            .intro{
-                font-size: 12px;
-                color:#ABABAB;
-            } 
+            
         }
+        .name{
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+        }
+        .intro{
+            font-size: 12px;
+            color:#ABABAB;
+        } 
         .cases{
             background: #F5F5F5;
             padding: 70px 0;
             ul{
-                margin: 50px 0 0 0;
+                margin: 40px 0 0 0;
                 li{
                     float: left;
                     width: 32%;
                     margin-right: 15px; 
+                    padding: 30px 0px;
+                    box-sizing: border-box;
+                    background: #fff;
+                    height: 480px;
                     img{
                         width: 100%;
                     }
                     &:last-child{
                         margin-right:0; 
+                    }
+                    .name{
+                        font-size: 20px;
+                        margin: 20px 0 4px 0;
+                    }
+                    .intro{
+                        font-size: 15px;
                     }
                 }
             }

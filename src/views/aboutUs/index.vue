@@ -122,9 +122,10 @@
         
     }
     .us,.contact_us{
+        width: 100%;
+        min-width: 1200px;
         padding: 60px 0 80px 0;
         border-bottom: 1px solid #E7E7E7;
-        
     }
     .content{
         margin: 50px 0 0 0;

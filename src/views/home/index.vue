@@ -240,6 +240,7 @@
 .home_page{
     .banner{
        width:100%;
+       min-width: 1200px;
        height: 575px;
        background: url('../../assets/home/banner.png') no-repeat;
        background-size: cover;
@@ -263,11 +264,12 @@
     .intro{
         color:#ABABAB;
         font-size: 12px;
-        margin: 10px 0 0 0;
-        line-height: 22px;
+        margin: 6px 0 0 0;
+        line-height: 20px;
     }
     .superiority{
         width: 100%;
+        min-width: 1200px;
         height: 730px;
         background: url('../../assets/home/bg.png') no-repeat;
         background-size: cover;
@@ -357,6 +359,8 @@
     .plan{
         background: #F4F8F9;
         padding: 80px 0 100px 0;
+        width: 100%;
+        min-width: 1200px;
         ul{
             margin: 80px 0 0 0;
             li{
@@ -382,6 +386,7 @@
         padding: 80px 0;
         img{
             width: 100%;
+            min-width: 1200px;
         }
     }
 }

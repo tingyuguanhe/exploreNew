@@ -14,6 +14,7 @@
 <style lang="scss" scoped>
     .submit_msg{
         width: 100%;
+        min-width: 1200px;
         height: 222px;
         background: url('../assets/home/msg_bg.png') no-repeat;
         background-position: center center;
@@ -23,7 +24,7 @@
         .form{
             position: absolute;
             left: 50%;
-            top: 100px;
+            top: 70px;
         }
         input{
             width: 200px;

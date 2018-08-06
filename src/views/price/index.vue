@@ -150,6 +150,8 @@
         }
     }
     .price_list{
+        width: 100%;
+        min-width: 1200px;
         .name{
             font-size: 18px;
             margin: 20px 0 10px 0;
@@ -184,6 +186,7 @@
     }
     .service{
         width: 100%;
+        min-width: 1200px;
         height: 430px;
         background: #4A789E;
         position: relative;
@@ -191,7 +194,9 @@
             position: absolute;
             left: 50%;
             bottom: 0;
-            width: 1370px;
+            width: 1200px;
+            max-width: 1370px;
+            min-width: 1200px;
             margin: 0 0 0 -685px;
         }
         .head{
@@ -227,6 +232,8 @@
     }
 
     .issues{
+        width: 100%;
+        min-width: 1200px;
         padding: 70px 0;
         background: #F5F5F5;
         ul{

@@ -10,11 +10,14 @@ import Price from '@/views/price/index'
 import SmallProgram from '@/views/smallProgram/index'
 import AboutUs from '@/views/aboutUs/index'
 import JoinUs from '@/views/joinUs/index'
+import Distribute from '@/views/distribute/index'
+
 
 Vue.use(Router)
 
 const router = new Router({
   mode:'history',
+  scrollBehavior: () => ({ y: 0 }),
   routes: [
     {
         path: '/',
@@ -80,12 +83,21 @@ const router = new Router({
           }
         },
         { 
+          path: '/distribute',
+          name: 'Distribute',
+          component: Distribute,
+          meta:{
+            name:'分销系统',
+            id: 6
+          }
+        },
+        { 
           path: '/about_us',
           name: 'AboutUs',
           component: AboutUs,
           meta:{
             name:'关于我们',
-            id: 6
+            id: 7
           }
         },
         { 
@@ -94,7 +106,7 @@ const router = new Router({
           component: JoinUs,
           meta:{
             name:'加入我们',
-            id: 7
+            id: 8
           }
         }
       ]

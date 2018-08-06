@@ -165,6 +165,7 @@
 
     .superiority{
         width: 100%;
+        min-width: 1200px;
         height: 730px;
         background: url('../../assets/marketing/bg.png') no-repeat;
         background-size: cover;

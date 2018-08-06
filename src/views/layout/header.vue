@@ -1,8 +1,8 @@
 <template>
-    <div class="head" :class="{'home_head':homeLogoShow}">
+    <div class="head" :class="{'home_head':homeLogoShow && scrollTop < 85, 'head_fixed': scrollTop > 100}">
         <div class="nr_wrap">
             <div class="f_l">
-                <img class="logo" v-if="homeLogoShow" src="../../assets/logo.png" alt="">
+                <img class="logo" v-if="homeLogoShow && scrollTop < 85" src="../../assets/logo.png" alt="">
                 <img class="logo" v-else src="../../assets/home/logo.png" alt="">
             </div> 
             <ul>
@@ -18,10 +18,12 @@
     export default{
         data(){
             return{
-                menus:[]
+                menus:[],
+                scrollTop: 0
             }
         },
         mounted () {
+            window.addEventListener('scroll', this.handleScroll)
             this.menus = this.$router.options.routes[1].children;
         },
         computed:{
@@ -40,6 +42,10 @@
                 this.activeNav = index;
                 this.$emit('activeNav',index);
                 this.$router.push({path: item.path});
+            },
+            handleScroll () {
+                this.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+               
             }
         }
     }
@@ -50,6 +56,12 @@
     height: 85px;
     line-height: 85px;
     background: #fff;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    overflow: hidden;
     ul{
         float: right;
         li{
@@ -78,6 +90,9 @@
                 }
             }
         }
+    }
+    &.head_fixed{
+        box-shadow: 0 0 6px #4b4b4b;
     }
 }
 </style>

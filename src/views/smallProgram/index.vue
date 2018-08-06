@@ -159,6 +159,8 @@
             color:#ABABAB;
         } 
         .cases{
+            width: 100%;
+            min-width: 1200px;
             background: #F5F5F5;
             padding: 70px 0;
             ul{
@@ -197,6 +199,7 @@
         .step{
             padding: 80px 0;
             width: 100%;
+            min-width: 1200px;
             height: 526px;
             background: url('../../assets/program/bg.png') no-repeat;
             background-position: center center;

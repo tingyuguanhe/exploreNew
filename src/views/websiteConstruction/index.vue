@@ -242,6 +242,7 @@
 
         .business_sys{
             width: 100%;
+            min-width: 1200px;
             height: 1020px;
             background: url('../../assets/website/bg2.png') no-repeat;
             background-position: center center;
@@ -270,6 +271,8 @@
         .plan{
             background: #F4F8F9;
             padding: 80px 0 100px 0;
+            width:100%;
+            min-width: 1200px;
             ul{
                 margin: 80px 0 0 0;
                 li{
@@ -288,25 +291,6 @@
                         color:#666666;
                     }
                 }
-            }
-        }
-        .make_order{
-            width: 100%;
-            height: 290px;
-            background: url('../../assets/website/bg.png') no-repeat;
-            background-size: cover;
-            background-position: center center;
-            padding: 60px 0 0 0;
-            box-sizing: border-box;
-            button{
-                background: transparent;
-                width: 160px;
-                height: 40px;
-                line-height: 37px;
-                border: 1px solid #fff;
-                color: #fff;
-                font-size: 16px;
-                margin: 20px 0 0 0;
             }
         }
 

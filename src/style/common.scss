@@ -21,6 +21,7 @@ ul{
 
 .nr_wrap{
     width: 1200px;
+    min-width: 1200px;
     min-height: 85px;
     margin: 0 auto;
 }
@@ -47,4 +48,30 @@ button{
 
 .sub_head{
     color:#9D9D9D;
+}
+
+.make_order{
+    width: 100%;
+    min-width: 1200px;
+    height: 290px;
+    background: url('../assets/website/bg.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 60px 0 0 0;
+    box-sizing: border-box;
+    button{
+        background: transparent;
+        width: 160px;
+        height: 40px;
+        line-height: 37px;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 16px;
+        margin: 20px 0 0 0;
+    }
+}
+
+.banner{
+    margin-top: 85px;
+    min-width: 1200px;
 }

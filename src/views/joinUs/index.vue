@@ -130,6 +130,8 @@
     }
 
     .join{
+        width: 100%;
+        min-width: 1200px;
         padding: 60px 0 80px 0;
         background: #F8F8F8;
         .contact_us{

@@ -78,7 +78,7 @@
             .phone_num{
                 font-size: 30px;
                 color:#39C19A;
-                margin: 55px 0 10px 0;
+                margin: 55px 0 15px 0;
             }
             .time,.address,.phone,.code{
                 color:#AEAEAE;

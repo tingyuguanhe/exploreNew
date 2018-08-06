@@ -77,17 +77,17 @@
                         date:'2018-06-30'
                     },
                     {
-                        name:'电话代表',
+                        name:'客服专员/助理（文职类）',
                         intro:'喜爱自己的工作，有责任有上进心',
                         date:'2018-06-30'
                     },
                     {
-                        name:'电话代表',
+                        name:'高级网页设计师/资深网页设计师',
                         intro:'喜爱自己的工作，有责任有上进心',
                         date:'2018-06-30'
                     },
                     {
-                        name:'电话代表',
+                        name:'人事专员/助理（文职类）',
                         intro:'喜爱自己的工作，有责任有上进心',
                         date:'2018-06-30'
                     }
@@ -199,7 +199,7 @@
         margin: 20px 0 0 0;
         li{
             text-align: left;
-            padding: 20px;
+            padding:24px 30px;
             background: #fff;
             margin: 0 0 20px 0;
             .name{
@@ -217,8 +217,8 @@
             .add_btn{
                 background: #BCBCBC;
                 width: 40px;
-                height: 16px;
-                line-height: 15px;
+                height: 17px;
+                line-height: 13px;
                 color: #fff;
                 font-size: 15px;
                 text-align: center;

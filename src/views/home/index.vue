@@ -366,7 +366,7 @@
             li{
                 float: left;
                 width: 25%;
-                padding: 0 44px;
+                padding: 0 40px;
                 box-sizing: border-box;
                 img{
                     width: 140px;

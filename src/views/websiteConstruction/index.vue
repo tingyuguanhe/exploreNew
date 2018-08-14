@@ -278,7 +278,7 @@
                 li{
                     float: left;
                     width: 25%;
-                    padding: 0 44px;
+                    padding: 0 42px;
                     box-sizing: border-box;
                     img{
                         width: 140px;

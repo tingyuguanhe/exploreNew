@@ -58,7 +58,7 @@
 
 <style lang="scss" scoped>
 .head{
-    /* height: 85px; */
+    height: 85px;
     line-height: 85px; 
     background: #fff;
     position: fixed;
@@ -83,7 +83,7 @@
 
     .logo{
         width: 150px;
-        padding: 12px 0 0 0;
+        padding: 22px 0 0 0;
         box-sizing: border-box;
     }
     &.home_head{

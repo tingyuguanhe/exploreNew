@@ -1,5 +1,5 @@
 <template>
-    <div class="head" :class="{'home_head':homeLogoShow && scrollTop < 85, 'head_fixed': scrollTop > 100}">
+    <div class="head" :class="{'home_head home_head_nav1':homeLogoShow && scrollTop < 85, 'head_fixed': scrollTop > 100}">
         <div class="nr_wrap">
             <div class="f_l">
                 <img class="logo" v-if="homeLogoShow && scrollTop < 85" src="../../assets/logo.png" alt="">
@@ -37,6 +37,11 @@
             }
         },
         props: ['homeLogoShow','activeMenu'],
+        created () {
+            setInterval(function(){
+
+            },3000)
+        },  
         methods: {
             routeLink(item,index){
                 this.activeNav = index;
@@ -53,11 +58,13 @@
 
 <style lang="scss" scoped>
 .head{
-    height: 85px;
-    line-height: 85px;
+    /* height: 85px; */
+    line-height: 85px; 
     background: #fff;
     position: fixed;
     width: 100%;
+    min-width: 1200px;
+    overflow: hidden;
     left: 0;
     top: 0;
     z-index: 100;
@@ -76,12 +83,10 @@
 
     .logo{
         width: 150px;
-        margin: 20px 0 0 0;
+        padding: 12px 0 0 0;
+        box-sizing: border-box;
     }
     &.home_head{
-        background: url('../../assets/home/head_banner.png') no-repeat;
-        background-size: cover;
-        background-position:center center;
         ul{
             li{
                 color:#fff;
@@ -91,8 +96,22 @@
             }
         }
     }
+    &.home_head_nav1{
+        background: transparent;
+        /* background: url('../../assets/home/head_banner.png') no-repeat; */
+        /* background-size: contain; */
+        /* background-position:center center; */
+    }
+    &.home_head_nav2{
+        background-color: #5db6de;
+    }
+    &.home_head_nav3{
+        background-color: #39c19a;
+    }
     &.head_fixed{
         box-shadow: 0 0 6px #4b4b4b;
+        height: 85px;
+        line-height: 85px;
     }
 }
 </style>

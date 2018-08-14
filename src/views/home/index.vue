@@ -1,6 +1,11 @@
 <template>
     <div class="home_page">
-        <div class="banner"></div> 
+        <el-carousel :autoplay="true" indicator-position="none">
+            <el-carousel-item v-for="item in 3" :key="item">
+                <div class="home_banner"></div> 
+            </el-carousel-item>
+        </el-carousel>
+        
         <div class="nr_wrap">
             <ul class="clearfix range">
                 <li v-for="(item,index) in list" :key="index">
@@ -82,6 +87,7 @@
         <!-- 提交信息 -->
         <my-form></my-form>
     </div>
+
 </template>
 
 <script>
@@ -232,20 +238,18 @@
                     }
                 ]
             }
+        },
+        created () {
+            setInterval(function(){
+
+            },3000)
         }
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .home_page{
-    .banner{
-       width:100%;
-       min-width: 1200px;
-       height: 575px;
-       background: url('../../assets/home/banner.png') no-repeat;
-       background-size: cover;
-       background-position:center center;
-    }
+    
     ul.range{
         li{
             float: left;
@@ -389,5 +393,49 @@
             min-width: 1200px;
         }
     }
+    .el-carousel{
+        position: relative;
+        width: 100%;
+        .el-carousel__container{
+            width: 100%;
+            height: 460px;
+        }
+    }
+
+    @media screen and (min-width: 1450px) {
+        .el-carousel{
+            .el-carousel__container{
+                height: 660px;
+                max-height: 660px;
+            }
+        }
+    }
+    
+    .home_banner{
+       width:100%;
+       min-width: 1200px;
+       min-height: 660px;
+       background: url('../../assets/home/banner.png') no-repeat;
+       background-size: 100% !important;
+    }
+
+    .el-carousel{
+        .el-carousel__item:nth-child(3) {
+            .home_banner{
+                background: url('../../assets/home/banner.png') no-repeat;
+            } 
+        }
+        .el-carousel__item:nth-child(4) {
+            .home_banner{
+                background: url('../../assets/home/banner2.png') no-repeat #5db6de;
+            }
+        }
+        .el-carousel__item:nth-child(5) {
+            .home_banner{
+                background: url('../../assets/home/banner3.png') no-repeat #39c19a;
+            }
+        }
+    }
+        
 }
 </style>
